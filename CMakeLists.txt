@@ -40,7 +40,7 @@ AddCatkinProject(puppet_description
 )
 
 AddProject(mc_biRobotTeleop
-  GITHUB adallard/mc_biRobotTeleop
+  GITHUB antodld/mc_biRobotTeleop
   GIT_TAG origin/main
   DEPENDS mc_rtc biRobotTeleop_utils puppet contact_estimation joystickPlugin openVrPlugin UDPDataLink
 )
