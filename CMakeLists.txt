@@ -11,6 +11,12 @@ AddProject(UDPDataLink
 
 AddProject(openVrPlugin
   GITHUB antodld/mc_OpenVR_plugin
+  GIT_TAG origin/main
+  DEPENDS mc_rtc
+)
+
+AddProject(joystickPlugin
+  GITHUB antodld/mc_joystick_plugin
   GIT_TAG origin/master
   DEPENDS mc_rtc
 )
@@ -27,16 +33,16 @@ AddProject(puppet
   DEPENDS mc_rtc
 )
 
-AddProject(puppet_description
+AddCatkinProject(puppet_description
   GITHUB antodld/puppet_description
   GIT_TAG origin/main
-  DEPENDS mc_rtc
+  WORKSPACE data_ws
 )
 
-AddProject(mc_BiRobotTeleop
+AddProject(mc_biRobotTeleop
   GITHUB adallard/mc_biRobotTeleop
   GIT_TAG origin/main
-  DEPENDS biRobotTeleop_utils puppet
+  DEPENDS mc_rtc biRobotTeleop_utils puppet contact_estimation joystickPlugin openVrPlugin UDPDataLink
 )
 
 
