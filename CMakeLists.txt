@@ -17,7 +17,7 @@ AddProject(openVrPlugin
 
 AddProject(joystickPlugin
   GITHUB antodld/mc_joystick_plugin
-  GIT_TAG origin/master
+  GIT_TAG origin/main
   DEPENDS mc_rtc
 )
 
