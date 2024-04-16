@@ -9,10 +9,15 @@ AddProject(UDPDataLink
   GIT_TAG origin/main
 )
 
+AddProject(openvr
+  GITHUB ValveSoftware/openvr
+  GIT_TAG origin/master
+)
+
 AddProject(openVrPlugin
   GITHUB antodld/mc_OpenVR_plugin
   GIT_TAG origin/main
-  DEPENDS mc_rtc
+  DEPENDS mc_rtc openvr
 )
 
 AddProject(joystickPlugin
